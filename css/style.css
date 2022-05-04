@@ -1,0 +1,566 @@
+
+/* css variation */
+:root {
+    --primary: #ffffff;
+    --dark-blue: #002847;
+    --yellow: #F2C147;
+    --shadow: 0 28px 40px rgba(14, 31, 53, 0.15);
+    --hover-border: 2px solid rgb(250, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+ /* Global styling */
+
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+body {
+    background-color: #e8e8e8 ;
+}
+
+.main-container {
+    position: relative;
+    background-color: var(--primary);
+    margin: 30px 40px;
+}
+
+li, a, button {
+    font-family: "Montserrat" sans-serif;
+    font-size: 16px;
+    /* font-weight: 500; */
+    color: var(--dark-blue);
+    text-decoration: none;
+}
+
+/* img{
+    max-height: 100%;
+} */
+
+button  {
+    padding: 5px;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: var(--dark-blue);
+    background-color: var(--yellow);
+    font-size: 12px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+/* Navigation Bar */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.main-nav ul {
+    list-style: none;
+}
+
+.main-nav li {
+    display: inline;
+    padding: 0px 20px;
+}
+.main-nav li a:hover {
+    border: var(--hover-border) ;
+}
+
+.search-signUp .search {
+    display: inline;
+    padding: 0px 5px;
+}
+
+.search-signUp img {
+    max-width: 12%;
+}
+
+/* Advert Section */
+
+.advert {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--yellow);
+    padding: 20px 30px;
+    gap:20px;
+}
+ 
+
+ .advert button {
+    color: var(--primary);
+    background-color:var(--dark-blue);
+    margin-left: 5px;
+
+}
+
+.advert-info {
+    text-align: center;
+    margin: auto;
+}
+
+.advert-info p, .advert-info a {
+    display: inline;
+
+}
+
+
+/* Showcase */
+
+.showcase {
+    position:relative;
+    background-color:var(--dark-blue);
+    color: var(--primary);
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 30px;
+    
+}
+
+.showcase img {
+    width: 100%;
+}
+.showcase-info {
+    display: flex;
+    line-height: 1.4;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 20px 30px;
+}
+
+.showcase-image, .showcase-image1 {
+    padding: 20px 30px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+
+}
+
+.showcase-image2 {
+    position:absolute;
+    top: 30px;
+    left: 30px;
+
+
+}
+
+.showcase-info button {
+    margin-top: 20px;
+}
+
+/* Introductory Class Section -A */
+
+.intro-info {
+    text-align: center;
+    color: var(--dark-blue);
+    background-color: var(--primary);
+    margin: 40px auto;
+}
+
+ .intro-info p {
+    margin: auto 220px;
+    padding-top: 30px;
+
+}
+
+/* Introductory Class Section -B */
+
+
+
+.intro-course-section {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px 30px 120px;
+}
+
+.intro-course-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.intro-course-section .intro-course {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-shadow: var(--shadow);
+    width: 350px;
+    border-radius: 15px;
+    
+}
+
+.intro-course-section .intro-course .course-signUp {
+    padding: 10px;
+}
+
+
+.course-signUp p {
+    margin-bottom: 10px;
+}
+
+
+.course-signUp button{
+    padding: 8px;
+    color: var(--primary);
+    background-color:var(--dark-blue);
+
+}
+
+/* Intro- About Markaz */
+
+
+#about-intro {
+    display: grid;
+    grid-template-areas: 
+    'img about';
+    background-color: var(--yellow);
+    margin-bottom: 120px;
+    
+}
+
+#about-intro img{
+    max-width: 100%;
+    grid-area: img;
+}
+
+.about-intro-info-header{
+    grid-area: about;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: auto 50px;
+}
+
+.about-intro-info-body p {
+    padding: 10px 0 ;
+}
+
+.about-intro-info-body button {
+    padding: 12px;
+    color: var(--primary);
+    background-color:var(--dark-blue);
+    margin-top: 10px;
+}
+
+/* Media Section */
+
+.media-section {
+    display: grid;
+    grid-template-areas: 
+    'media-section-info media-section-info image-a image-b '
+    'media-section-info media-section-info image-c image-d ';
+    gap: 60px;
+    margin: 20px 30px 120px;
+
+}
+
+.media-section-info {
+    grid-area: media-section-info;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.media-section-info h1 {
+    padding-right: 30px;
+}
+.media-section-info button {
+    padding: 12px;
+    color: var(--primary);
+    background-color:var(--dark-blue);
+    margin-top: 10px;  
+}
+
+.media-section-advert {
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+}
+
+
+.img-wrap{
+    max-height: 150px;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    bottom: 0;
+}
+
+.img-wrap1 {
+    position: relative;
+    top: 0;
+    bottom: 0;
+}
+
+.img-wrap2 {
+    position: absolute;
+    top: 70px;
+    left: 120px;
+}
+
+.img-wrap img{
+    width: auto;
+    height: auto;
+}
+.media-image-a {
+    grid-area: image-a ;
+
+}
+.media-image-b {
+    grid-area: image-b;
+
+}
+.media-image-c {
+    grid-area: image-c;
+    
+}
+.media-image-d {
+    grid-area: image-d;
+
+}
+
+.content-wrap {
+    padding: 20px;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.content-wrap  p{
+    font-size: 10px;
+}
+
+.content-wrap img{
+    position: relative;
+    right: -120px;
+}
+
+
+/* Donation Section */
+
+.donate{
+    display: grid;
+    grid-template-areas: 
+    'img about';
+    background-color: var(--yellow);
+    border-radius: 20px;
+    margin: 20px 10px 120px;
+
+}
+
+.donate img {
+    position: relative;
+    max-width: 480px;
+    top:-120px;
+    right: 20px;
+    grid-area: img;
+}
+.about-donation-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    grid-area: about;
+    margin-right : 50px;
+}
+
+.about-donation-header h1{
+    padding-bottom: 15px;
+}
+
+.about-donation-header button {
+    padding: 12px;
+    color: var(--primary);
+    background-color:var(--dark-blue);
+    margin-top: 15px
+
+}
+
+
+/* footer */
+footer {
+    height: 200px;
+    background: var(--dark-blue);
+    color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+footer ul {
+    list-style: none;
+    /* text-align: center; */
+}
+
+footer li {
+    display: inline;
+    
+
+}
+
+footer a {
+    color: var(--primary);
+    padding: 10px;
+
+}
+
+.media-icons {
+    padding: 10px;
+}
+
+
+/* LECTURERS PAGE */
+
+.topic-info h1{
+    padding: 0 30px;
+    /* margin: 20px 30px 120px; */
+
+}
+
+.media-display {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    margin: 20px 30px 120px;
+}
+
+/* COURSES PAGE */
+
+.course-content-wrap {
+    padding: 20px 10px;
+}
+
+ .course-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+ }
+
+ .course-content-wrap .current-level img {
+    float: left ;
+ }
+
+ .course-content-wrap p {
+     font-size: 15px;
+     padding: 10px 0;
+ }
+
+ .course-content-wrap .smaller-p {
+     font-size: 12px;
+ }
+
+
+ .course-content-wrap .current-level p {
+     float: left;
+ }
+
+ .course-content-wrap .course-duration p{
+     float: right;
+ }
+
+ .course-content-wrap .course-duration img {
+     float: right;
+ }
+
+
+ .page-numbering {
+     margin: 0 auto 120px;
+     display: flex;
+     gap: 10px;
+ }
+ 
+
+ /* SIGN-UP PAGE */
+
+ .contact-container {
+     position: relative;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 20px 100px;
+ }
+
+
+ .contact-info {
+     max-width: 1050px;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     justify-content: center;
+     align-items: flex-start;
+     /* text-align: center; */
+     background-color: var(--primary);
+     box-shadow: var(--shadow);
+
+ }
+
+.contact-wallpaper {
+    background-image: url('../images/lecture-media2.png');
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 100%;
+
+}
+
+.contact-details img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-details {
+    padding: 25px 40px;
+}
+
+
+form {
+    margin: 50px auto;
+}
+
+.input-details {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 22px;
+    border-radius: 0 3px 0 3px;
+}
+
+input[type="submit"] {
+    display: block;
+    color: var(--primary);
+    background-color: var(--dark-blue);
+    padding: 8px;
+    margin: 10px 0;
+}
+
+form a {
+    text-decoration: underline;
+}
+ 
